@@ -16,11 +16,7 @@ function changeColor(itens) {
 }
 
 function lineTrhough(itens) {
-  if (itens.target.classList.contains('completed')) {
-    itens.target.classList.toggle('completed');
-  } else {
-    itens.target.classList.toggle('completed');
-  }
+  itens.target.classList.toggle('completed');
 }
 
 function resetInput() {
@@ -64,7 +60,6 @@ function moveUp() {
   console.log(li);
   for (let index = 0; index < li.length; index += 1) {
     if (li[index].classList.contains('selected') && (li[index] !== ol.firstElementChild)) {
-      console.log(li[index]);
       ol.insertBefore(li[index], li[index].previousElementSibling);
       break;
     }
@@ -76,7 +71,6 @@ function moveDown() {
   console.log(li);
   for (let index = 0; index < li.length; index += 1) {
     if (li[index].classList.contains('selected') && (li[index] !== ol.lastElementChild)) {
-      console.log(li[index]);
       ol.insertBefore(li[index], li[index].nextElementSibling.nextElementSibling);
       break;
     }
