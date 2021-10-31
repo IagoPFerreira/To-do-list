@@ -41,26 +41,6 @@ main {
   font-size: 16pt;
 }
 
-/* #ban , #trash , #times {
-  color: rgb(236, 236, 236);
-} */
-
-/* #arrow-up {
-  color: rgb(8, 153, 8);
-} */
-
-/* #arrow-down {
-  color: rgb(212 , 148 , 10);
-} */
-
-/* #save {
-  color: rgb(14 , 14 , 177);
-} */
-
-/* #paper-plane {
-  color: rgb(153, 44, 255);
-} */
-
 .tooltip {
   display: inline-block;
   position: relative;
@@ -88,6 +68,10 @@ main {
 #texto-tarefa {
   padding: 1%;
   width: 80%;
+}
+
+.itens {
+  font-size: 18pt;
 }
 
 .completed {
