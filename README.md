@@ -46,4 +46,4 @@ Passo 4. Após terminado a clonagem, abra o diretório clonado e dê um duplo cl
 
 ## Link para o repositorio do projeto
 
-<https://github.com/IagoPFerreira/To-do-list>
+<https://github.com/IagoPFerreira/to-do-list>
