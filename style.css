@@ -92,6 +92,7 @@ main {
 
 .completed {
   text-decoration: line-through;
+  color: rgb(24 , 105 , 3);
 }
 
 .selected {
