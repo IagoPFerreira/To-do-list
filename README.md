@@ -42,8 +42,8 @@ Passo 4. Após terminado a clonagem, abra o diretório clonado e dê um duplo cl
 
 ## Link para o deploy
 
-<https://iagopferreira.github.io/pixels-art>
+<https://iagopferreira.github.io/to-do-list>
 
 ## Link para o repositorio do projeto
 
-<https://github.com/IagoPFerreira/pixels-art>
+<https://github.com/IagoPFerreira/To-do-list>
