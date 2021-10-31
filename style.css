@@ -1,7 +1,153 @@
 body {
-  background-color: aquamarine;
+  align-items: center;
+  background-color: rgb(2 , 21 , 27);
+  color: rgb(231 , 231 , 231);
+  display: flex;
+  flex-direction: column;
+  font-family: Zen Kaku Gothic Antique, sans-serif;
+  justify-content: space-around;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+#buttons-group {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  width: 81%;
+}
+
+.btns {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 1%;
+}
+
+#criar-tarefa {
+  border-radius: 100%;
+}
+
+.icon {
+  color: black;
+  font-size: 16pt;
+}
+
+/* #ban , #trash , #times {
+  color: rgb(236, 236, 236);
+} */
+
+/* #arrow-up {
+  color: rgb(8, 153, 8);
+} */
+
+/* #arrow-down {
+  color: rgb(212 , 148 , 10);
+} */
+
+/* #save {
+  color: rgb(14 , 14 , 177);
+} */
+
+/* #paper-plane {
+  color: rgb(153, 44, 255);
+} */
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  background-color: black;
+  border-radius: 6px;
+  top: 100%;
+  color: white;
+  left: 50%;
+  margin-left: -60px;
+  padding: 5px 0;
+  position: absolute;
+  text-align: center;
+  visibility: hidden;
+  width: 120px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#texto-tarefa {
+  padding: 1%;
+  width: 80%;
 }
 
 .completed {
   text-decoration: line-through;
+}
+
+.selected {
+  color: rgb(179 , 97 , 5);
+}
+
+#funcionamento {
+  font-size: 15pt;
+}
+
+@media screen and ( max-width : 790px ) {
+
+  main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  #buttons-group {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5%;
+  }
+
+  button {
+    margin: 0 15% 5% 0;
+  }
+
+  .icon {
+    color: black;
+    font-size: 23pt;
+  }
+
+  .tooltip .tooltiptext {
+    background-color: transparent;
+    border-radius: 6px;
+    top: 100%;
+    color: white;
+    left: 50%;
+    margin-left: -60px;
+    padding: 5px 0;
+    position: absolute;
+    text-align: center;
+    visibility: visible;
+    width: 120px;
+    z-index: 1;
+  }
+}
+
+@media screen and ( max-width : 540px ) {
+
+  button {
+    margin: 0 30% 10% 0;
+  }
 }

@@ -7,7 +7,6 @@ function changeColor(itens) {
   for (let index = 0; index < colorize.length; index += 1) {
     if (colorize[index] === select) {
       colorize[index].classList.add('selected');
-      colorize[index].style.backgroundColor = 'rgb(128, 128, 128)';
     } else {
       colorize[index].classList.remove('selected');
       colorize[index].removeAttribute('style');
@@ -89,6 +88,10 @@ function removeSelected() {
 
 const sendBtn = document.querySelector('#criar-tarefa');
 sendBtn.addEventListener('click', resetInput);
+
+document.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') resetInput();
+});
 
 const cleanButton = document.querySelector('#apaga-tudo');
 cleanButton.addEventListener('click', cleanList);

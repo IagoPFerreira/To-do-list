@@ -5,27 +5,57 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://kit.fontawesome.com/ef9184ac07.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Minha Lista de Tarefas</h1>
+    <h1>Lista de Tarefas</h1>
   </header>
 
-  <input type="text" id="texto-tarefa">
-  <button id="criar-tarefa" type="submit">Enviar</button>
-  <button id="apaga-tudo">Apaga tudo</button>
-  <button id="remover-finalizados">Remover finalizados</button>
-  <button id="salvar-tarefas">Salvar tarefas</button>
-  <button id="mover-cima">Mover para cima</button>
-  <button id="mover-baixo">Mover para baixo</button>
-  <button id="remover-selecionado">Remover selecionado</button>
-  
-  <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+  <main>
+    <section id="buttons-group">
+      <button id="criar-tarefa" type="submit" class="btns tooltip">
+        <i class="fas fa-paper-plane icon" id="paper-plane" style="color:rgb(153, 44, 255);"></i>
+        <span class="tooltiptext">Enviar</span>
+      </button>
+      <button id="salvar-tarefas" class="btns tooltip">
+        <i class="fas fa-save icon" id="save" style="color:rgb(2, 70, 255);"></i>
+        <span class="tooltiptext">Salvar tarefas</span>
+      </button>
+      <button id="mover-cima" class="btns tooltip">
+        <i class="fas fa-arrow-up icon" id="arrow-up" style="color:rgb(8, 153, 8);"></i>
+        <span class="tooltiptext">Mover para cima</span>
+      </button>
+      <button id="mover-baixo" class="btns tooltip">
+        <i class="fas fa-arrow-down icon" id="arrow-down" style="color:rgb(212 , 148 , 10);"></i>
+        <span class="tooltiptext">Mover para baixo</span>
+      </button>
+      <button id="apaga-tudo" class="btns tooltip tooltip">
+        <i class="fas fa-trash-alt icon" id="trash" style="color:rgb(236, 236, 236);"></i>
+        <span class="tooltiptext">Apaga tudo</span>
+      </button>
+      <button id="remover-selecionado" class="btns tooltip">
+        <i class="fas fa-ban icon" id="ban" style="color:rgb(240, 125, 18);"></i>
+        <span class="tooltiptext">Remover selecionado</span>
+      </button>
+      <button id="remover-finalizados" class="btns tooltip">
+        <i class="fas fa-times icon" id="times" style="color:rgb(196 , 14 , 14);"></i>
+        <span class="tooltiptext">Remover finalizados</span>
+      </button>
+    </section>
 
-  <ol id="lista-tarefas">
+    <input type="text" id="texto-tarefa">
 
-  </ol>
+    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+
+    <ol id="lista-tarefas">
+
+    </ol>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
